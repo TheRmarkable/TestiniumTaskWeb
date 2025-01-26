@@ -1,0 +1,45 @@
+
+# Create Account Without ClientId
+* Define new request
+* Add base url "https://catchylabs-api.testinium.com/"
+* Add relaxed HTTPS validation
+* Add endpoint "api/v1/banking/accounts"
+* Add Headers
+    |key            |value                      |
+    |---------------|---------------------------|
+    |Content-Type   |application/json            |
+* Add Authorization header from suite data store
+* Add body as String from resource "payloads/createAccount.json"
+* Add log filter with errorStatus
+    |Status |
+    |500    |
+    |400    |
+    |405    |
+    |201    |
+    |403    |
+    |401    |
+* Post request
+* Check if status code is "200"
+
+# Create Account With ClientId
+
+* Define new request
+* Add base url "https://catchylabs-api.testinium.com/"
+* Add relaxed HTTPS validation
+* Add endpoint "api/v1/banking/accounts"
+* Add Headers
+    |key            |value                      |
+    |---------------|---------------------------|
+    |Content-Type   |application/json            |
+* Add Authorization header from suite data store
+* Add body as String from resource "payloads/createAccWithClientId.json"
+* Add log filter with errorStatus
+    |Status |
+    |500    |
+    |400    |
+    |405    |
+    |201    |
+    |403    |
+    |401    |
+* Post request
+* Check if status code is "200"

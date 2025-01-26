@@ -1,0 +1,22 @@
+# LoginAndStartSession
+
+* Get Access Token and Store It in Suite from "https://catchylabs-api.testinium.com"
+* Define new request
+* Add base url "https://catchylabs-api.testinium.com/"
+* Add relaxed HTTPS validation
+* Add endpoint "api/v1/sessions/start"
+* Add Headers
+    |key            |value                      |
+    |---------------|---------------------------|
+    |Content-Type   |application/json            |
+* Add Authorization header from suite data store
+* Add log filter with errorStatus
+    |Status |
+    |500    |
+    |400    |
+    |405    |
+    |201    |
+    |403    |
+    |401    |
+* Post request
+* Check if status code is "202"

@@ -1,0 +1,22 @@
+# Get Access Token and Store It in Suite from <URL>
+
+* Define new request
+* Add base url <URL>
+* Add relaxed HTTPS validation
+* Add endpoint "/api/v1/login"
+* Add Headers
+    |key            |value                      |
+    |---------------|---------------------------|
+    |Content-Type   |application/json|
+* Add body as String from resource "payloads/authorization.json"
+* Add log filter with errorStatus
+    |Status |
+    |500    |
+    |400    |
+    |405    |
+    |201    |
+    |403    |
+    |401    |
+* Post request
+* Get "access_token" from response and store it with "access_token" during suite
+* Check if status code is "200"
